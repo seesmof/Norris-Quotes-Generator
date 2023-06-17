@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ChuckQuote from "./components/ChuckQuote";
 import ChuckPhoto from "/chuck.jpg";
 
