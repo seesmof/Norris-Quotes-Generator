@@ -2,7 +2,7 @@
 
 <div align="center">
     <a href="https://github.com/seesmof/">
-        <img src="./public/logo.svg" alt="Logo" height="80">
+        <img src="./public/logo.png" alt="Logo" height="80">
     </a>
 
 <h1 align="center">Hello World with React</h1>
