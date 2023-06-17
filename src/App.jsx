@@ -19,8 +19,8 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-slate-900 text-slate-50 w-full flex items-center justify-center">
-        <div className="flex flex-row gap-12 p-6 container mx-auto max-w-5xl">
-          <div className="flex flex-col flex-1">
+        <main className="flex flex-row gap-12 p-6 container mx-auto max-w-5xl">
+          <section className="flex flex-col flex-1">
             <h1 className="font-medium text-4xl border-b pb-4 border-slate-400">
               Chuck Norris Quotes
             </h1>
@@ -34,16 +34,16 @@ function App() {
             </button>
 
             <ChuckQuote joke={joke} />
-          </div>
+          </section>
 
-          <div className="hidden max-w-sm lg:flex">
+          <article className="hidden max-w-sm lg:flex">
             <img
               src={ChuckPhoto}
               alt="Chuck Norris portrait image"
               className="rounded-md"
             />
-          </div>
-        </div>
+          </article>
+        </main>
       </div>
     </>
   );
