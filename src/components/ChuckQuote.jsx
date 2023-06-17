@@ -7,7 +7,9 @@ const ChuckQuote = ({ joke }) => {
         <blockquote className="border-l-2 border-slate-300 pl-4">
           {joke}
         </blockquote>
-        <cite className="self-end">- Chuck Norris</cite>
+        <cite className={`self-end ${joke.length === 0 ? "hidden" : ""}`}>
+          - Chuck Norris
+        </cite>
       </div>
     </>
   );

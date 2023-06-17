@@ -4,22 +4,15 @@ import ChuckQuote from "./components/ChuckQuote";
 function App() {
   const [joke, setJoke] = useState("");
 
-  useEffect(() => {
-    const fetchJoke = async () => {
-      const response = await fetch("https://api.chucknorris.io/jokes/random");
-      const data = await response.json();
-      return data;
-    };
-
-    fetchJoke().then((data) => {
-      setJoke(data.value);
-    });
-  }, []);
-
-  const updateJoke = async () => {
+  const fetchJoke = async () => {
     const response = await fetch("https://api.chucknorris.io/jokes/random");
     const data = await response.json();
-    setJoke(data.value);
+    return data;
+  };
+
+  const updateJoke = async () => {
+    const newJoke = await fetchJoke();
+    setJoke(newJoke.value);
   };
 
   return (
