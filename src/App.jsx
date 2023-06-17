@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-slate-900 text-slate-50 w-full flex md:items-center">
-        <main className="flex md:flex-row flex-col-reverse gap-x-12 gap-y-6 sm:p-6 p-4 container mx-auto max-w-5xl">
+        <main className="flex md:flex-row flex-col-reverse gap-x-8 lg:gap-x-12 gap-y-6 sm:p-6 p-4 container mx-auto max-w-5xl">
           <section className="flex flex-col flex-1">
             <h1 className="font-medium text-4xl border-b pb-4 border-slate-400">
               Chuck Norris Quotes
