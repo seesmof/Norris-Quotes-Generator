@@ -19,7 +19,7 @@
 
 ## About
 
-This repository contains a very simple single-page app with a hello world and a button that prints a random joke from Chuck Norris. Made with React, TailwindCSS and Vite. Fully functional, fully responsive.
+This repository contains a very simple single-page app with a button that generates a random joke from Chuck Norris. Made with React, TailwindCSS and Vite. Fully functional, fully responsive.
 
 ## Screenshots
 
