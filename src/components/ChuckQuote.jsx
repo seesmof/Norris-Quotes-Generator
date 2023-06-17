@@ -1,20 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ChuckQuote = () => {
-  const [joke, setJoke] = useState("");
-
-  useEffect(() => {
-    const fetchJoke = async () => {
-      const response = await fetch("https://api.chucknorris.io/jokes/random");
-      const data = await response.json();
-      return data;
-    };
-
-    fetchJoke().then((data) => {
-      setJoke(data.value);
-    });
-  }, []);
-
+const ChuckQuote = ({ joke }) => {
   return (
     <>
       <div className="flex flex-col gap-1">

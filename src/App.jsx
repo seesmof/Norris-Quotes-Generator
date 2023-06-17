@@ -2,11 +2,24 @@ import React, { useEffect, useState } from "react";
 import ChuckQuote from "./components/ChuckQuote";
 
 function App() {
-  const addJoke = () => {
-    const jokesContainer = document.getElementById("jokes-container");
-    const newJoke = document.createElement("div");
-    newJoke.innerHTML = ChuckQuote();
-    jokesContainer.appendChild(newJoke);
+  const [joke, setJoke] = useState("");
+
+  useEffect(() => {
+    const fetchJoke = async () => {
+      const response = await fetch("https://api.chucknorris.io/jokes/random");
+      const data = await response.json();
+      return data;
+    };
+
+    fetchJoke().then((data) => {
+      setJoke(data.value);
+    });
+  }, []);
+
+  const updateJoke = async () => {
+    const response = await fetch("https://api.chucknorris.io/jokes/random");
+    const data = await response.json();
+    setJoke(data.value);
   };
 
   return (
@@ -15,11 +28,11 @@ function App() {
         <div className="p-6 flex container mx-auto max-w-4xl flex-col">
           <h1 className="font-medium text-4xl">Hello World</h1>
 
-          <button className="button my-4" onClick={addJoke}>
+          <button className="button my-4" onClick={updateJoke}>
             Click Me
           </button>
 
-          <div className="flex flex-col gap-4" id="jokes-container"></div>
+          <ChuckQuote joke={joke} />
         </div>
       </div>
     </>
