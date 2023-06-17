@@ -50,3 +50,5 @@ function App() {
 }
 
 export default App;
+
+// TODO: On the mobile version fix padding, reduce it to 4. Also add a top margin instead of centering the container, cause each time the quote gets regenerated and its of different size than it was, the button gets pushed arround the page, not user friendly.
