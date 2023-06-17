@@ -5,7 +5,7 @@
         <img src="./public/logo.png" alt="Logo" height="80">
     </a>
 
-<h1 align="center">Hello World with React</h1>
+<h1 align="center">Chuck Norris Quotes Generator</h1>
 </div>
 
 ## Table of contents

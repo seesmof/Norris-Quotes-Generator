@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ChuckQuote from "./components/ChuckQuote";
+import ChuckPhoto from "/chuck.jpg";
 
 function App() {
   const [joke, setJoke] = useState("");
@@ -37,7 +38,7 @@ function App() {
 
           <div className="hidden max-w-sm lg:flex">
             <img
-              src="/chuck.jpg"
+              src={ChuckPhoto}
               alt="Chuck Norris portrait image"
               className="rounded-md"
             />
