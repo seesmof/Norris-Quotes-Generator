@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ChuckQuote from "./components/ChuckQuote";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
           <h1 className="font-medium text-4xl">Hello World</h1>
 
           <button className="button mt-4">Click Me</button>
+
+          <ChuckQuote />
         </div>
       </div>
     </>
